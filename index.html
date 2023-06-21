@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Hava Durumu</title>
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hava Durumu</h1>
-        <input type="text" id="cityInput" placeholder="Şehir girin">
-        <button onclick="getWeather()">Hava Durumu Getir</button>
-        <div id="weatherInfo"></div>
+  <div class="container">
+    <h1>Weather App</h1>
+    <div class="input-container">
+      <input type="text" id="city-code" placeholder="Enter city code">
+      <button id="get-weather-btn">Get Weather</button>
     </div>
+    <div id="weather-info">
+      <p>Enter a city code and click "Get Weather" to see the weather information.</p>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
